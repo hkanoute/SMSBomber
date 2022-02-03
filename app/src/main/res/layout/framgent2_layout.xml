@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/task_form"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#ACA1A1"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_de_telephone"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"/>
+        <EditText
+            android:id="@+id/numero"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:background="#5676"
+            android:hint="@string/enter_date"
+            android:layout_marginStart="3dp"
+            android:autofillHints="String"
+            android:inputType="text"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"/>
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:background="#5676"
+            android:hint="@string/message"
+            android:layout_marginStart="3dp"
+            android:autofillHints="String"
+            android:inputType="textMultiLine"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_to_submit"
+        android:onClick="submitbuttonHandler"
+        android:textColor="#F5FBF6"
+        android:background="#B71C1C"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

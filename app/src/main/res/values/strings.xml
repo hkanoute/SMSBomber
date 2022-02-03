@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TaskList</string>
+    <string name="tab_text_1">Liste des contacts</string>
+    <string name="tab_text_2">Envoyer un message</string>
+    <string name="tab_text_3">Calendar</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_3">Fragment 3</string>
+    <string name="fragment_2">fragment 2</string>
+    <string name="contact">Task</string>
+    <string name="task_form">SMS form</string>
+    <string name="enter_date">numéro</string>
+    <string name="enter_your_task">enter your contact</string>
+    <string name="state">state</string>
+    <string name="click_to_submit">Click To Submit</string>
+    <string name="numero_de_telephone">telephone</string>
+    <string name="message">Message</string>
+</resources>
